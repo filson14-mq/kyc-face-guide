@@ -1,17 +1,20 @@
-const Zoloz = require('./vendor/zolozRealIdCore');
-console.log(Zoloz);
+import Zoloz from "./vendor/zolozRealIdCore";
 
 (function () {
-    // const zolozRealIdCore = new Zoloz();
+    const zolozCore = new Zoloz();
+    const button = document.querySelector('button');
 
-    const buttonClick = () => {
-        console.log('dziala');
-
-        console.log(zolozRealIdCore);
+    const buttonClick = async (event) => {
+        console.log('continue to camera', event);
+        event.target.disabled = true;
+        await zolozCore.end('next');
+        event.target.disabled = false;
     };
 
-    const button = document.querySelector('button');
-    console.log(button);
+    document.addEventListener('back', e => {
+        e.preventDefault();
+        zolozCore.end('back');
+    });
     button.onclick = buttonClick;
 })();
 

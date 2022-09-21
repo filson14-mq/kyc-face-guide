@@ -110,3 +110,7 @@ button {
     flex: none;
     flex-grow: 1;
 }
+
+button[disabled] {
+    background: #dcdcdc;
+}
