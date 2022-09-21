@@ -1,15 +1,17 @@
-// import
-(function() {
-  // const zolozRealIdCore = new ZolozRealIDCore();
+const Zoloz = require('./vendor/zolozRealIdCore');
+console.log(Zoloz);
 
-  const buttonClick = () => {
-    console.log('dziala');
+(function () {
+    // const zolozRealIdCore = new Zoloz();
 
-    // console.log(zolozRealIdCore);
-  };
+    const buttonClick = () => {
+        console.log('dziala');
 
-  const button = document.querySelector('button');
-  console.log(button);
-  button.onclick = buttonClick;
+        console.log(zolozRealIdCore);
+    };
+
+    const button = document.querySelector('button');
+    console.log(button);
+    button.onclick = buttonClick;
 })();
 
