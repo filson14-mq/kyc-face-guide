@@ -6,18 +6,18 @@
 
 @font-face {
     font-family: "Jeko";
-    src:    url("../fonts/Jeko/Jeko-SemiBold.otf") format("otf"),
-            url("../fonts/Jeko/Jeko-SemiBold.woff2") format("woff2"),
-            url("../fonts/Jeko/Jeko-SemiBold.woff") format("woff");
+    src:    url("../fonts/Jeko/Jeko-Bold.otf") format("otf"),
+            url("../fonts/Jeko/Jeko-Bold.woff2") format("woff2"),
+            url("../fonts/Jeko/Jeko-Bold.woff") format("woff");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Jeko";
-    src:    url("../fonts/Jeko/Jeko-Light.otf") format("otf"),
-            url("../fonts/Jeko/Jeko-Light.woff2") format("woff2"),
-            url("../fonts/Jeko/Jeko-Light.woff") format("woff");
+    src:    url("../fonts/Jeko/Jeko-SemiBold.otf") format("otf"),
+            url("../fonts/Jeko/Jeko-SemiBold.woff2") format("woff2"),
+            url("../fonts/Jeko/Jeko-SemiBold.woff") format("woff");
     font-weight: 600;
     font-style: normal;
 }
@@ -33,10 +33,10 @@
 
 @font-face {
     font-family: "Cerebri Sans Pro";
-    src:    url("../fonts/CerebriSansPro/CerebriSansPro-Light.otf") format("otf"),
-            url("../fonts/CerebriSansPro/CerebriSansPro-Light.ttf") format("ttf"),
-            url("../fonts/CerebriSansPro/CerebriSansPro-Light.woff") format("woff"),
-            url("../fonts/CerebriSansPro/CerebriSansPro-Light.woff2") format("woff2");
+    src:    url("../fonts/CerebriSansPro/CerebriSansPro-Book.otf") format("otf"),
+            url("../fonts/CerebriSansPro/CerebriSansPro-Book.ttf") format("ttf"),
+            url("../fonts/CerebriSansPro/CerebriSansPro-Book.woff") format("woff"),
+            url("../fonts/CerebriSansPro/CerebriSansPro-Book.woff2") format("woff2");
     font-style: normal;
     font-weight: 400;
 }
@@ -79,9 +79,9 @@ button {
     align-items: center;
 
     font-family: Jeko, "Arial Black", sans-serif;
+    font-weight: 700;
     font-size: 1.6rem;
     line-height: 1.25em;
-    font-weight: 400;
     height: 56px;
     padding: 18px;
 
@@ -97,9 +97,9 @@ button[disabled] {
 
 h1 {
     font-family: Jeko, "Arial Black", sans-serif;
+    font-weight: 700;
     font-size: 4.8rem;
     line-height: 1.17em;
-    font-weight: 700;
     letter-spacing: -1.5px;
     margin: 8px 0;
 }
@@ -121,9 +121,9 @@ h1 {
 
 .headline span {
     font-weight: 700;
+    font-family: Jeko, "Arial Black", sans-serif;
     font-size: 1.6rem;
     line-height: 1.25em;
-    font-family: Jeko, "Arial Black", sans-serif;
 }
 
 .headline .headline__icon {
