@@ -1,17 +1,19 @@
 require(['zolozRealIdCore'], function (zoloz) {
-    const Zoloz = zoloz.default;
-    const zolozCore = new Zoloz();
-    const button = document.querySelector('button');
+    var Zoloz = zoloz.default;
+    var zolozCore = new Zoloz();
+    var button = document.getElementById('continue-btn');
 
-    const buttonClick = async (event) => {
-        console.log('continue to camera', event);
+    function buttonClick(event) {
         event.target.disabled = true;
-        await zolozCore.end('next');
-        event.target.disabled = false;
-    };
+        var promise = zolozCore.end('next');
 
-    document.addEventListener('back', e => {
-        e.preventDefault();
+        promise.then(function () {
+            event.target.disabled = false;
+        });
+    }
+
+    document.addEventListener('back', function (event) {
+        event.preventDefault();
         zolozCore.end('back');
     });
     button.onclick = buttonClick;

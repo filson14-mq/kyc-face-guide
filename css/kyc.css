@@ -6,37 +6,37 @@
 
 @font-face {
     font-family: "Jeko";
-    src: url("../fonts/Jeko/Jeko-SemiBold.otf") format("otf"),
-    url("../fonts/Jeko/Jeko-SemiBold.woff2") format("woff2"),
-    url("../fonts/Jeko/Jeko-SemiBold.woff") format("woff");
+    src:    url("../fonts/Jeko/Jeko-SemiBold.otf") format("otf"),
+            url("../fonts/Jeko/Jeko-SemiBold.woff2") format("woff2"),
+            url("../fonts/Jeko/Jeko-SemiBold.woff") format("woff");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Jeko";
-    src: url("../fonts/Jeko/Jeko-Light.otf") format("otf"),
-    url("../fonts/Jeko/Jeko-Light.woff2") format("woff2"),
-    url("../fonts/Jeko/Jeko-Light.woff") format("woff");
+    src:    url("../fonts/Jeko/Jeko-Light.otf") format("otf"),
+            url("../fonts/Jeko/Jeko-Light.woff2") format("woff2"),
+            url("../fonts/Jeko/Jeko-Light.woff") format("woff");
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Jeko";
-    src: url("../fonts/Jeko/Jeko-Regular.otf") format("otf"),
-    url("../fonts/Jeko/Jeko-Regular.woff2") format("woff2"),
-    url("../fonts/Jeko/Jeko-Regular.woff") format("woff");
+    src:    url("../fonts/Jeko/Jeko-Regular.otf") format("otf"),
+            url("../fonts/Jeko/Jeko-Regular.woff2") format("woff2"),
+            url("../fonts/Jeko/Jeko-Regular.woff") format("woff");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Cerebri Sans Pro";
-    src: url("../fonts/CerebriSansPro/CerebriSansPro-Light.otf") format("otf"),
-    url("../fonts/CerebriSansPro/CerebriSansPro-Light.ttf") format("ttf"),
-    url("../fonts/CerebriSansPro/CerebriSansPro-Light.woff") format("woff"),
-    url("../fonts/CerebriSansPro/CerebriSansPro-Light.woff2") format("woff2");
+    src:    url("../fonts/CerebriSansPro/CerebriSansPro-Light.otf") format("otf"),
+            url("../fonts/CerebriSansPro/CerebriSansPro-Light.ttf") format("ttf"),
+            url("../fonts/CerebriSansPro/CerebriSansPro-Light.woff") format("woff"),
+            url("../fonts/CerebriSansPro/CerebriSansPro-Light.woff2") format("woff2");
     font-style: normal;
     font-weight: 400;
 }
@@ -51,14 +51,13 @@ body {
     padding: 24px;
     align-items: center;
     background: #ffffff;
-    /*overflow: hidden;*/
+    overflow-y: auto;
 }
 
 .wrapper {
     width: 100%;
     padding-bottom: 12rem;
     box-sizing: border-box;
-    /*margin-bottom: 150px;*/
 }
 
 .button-container {
@@ -116,7 +115,7 @@ h1 {
 .headline {
     display: flex;
     align-items: center;
-    margin: 32px 0px 16px;
+    margin: 32px 0 16px;
     gap: 10px;
 }
 
@@ -128,8 +127,9 @@ h1 {
 }
 
 .headline .headline__icon {
-    width: 16px;
-    height: 16px;
+    width: 17px;
+    height: 17px;
+    margin-top: -2px;
 }
 
 .steps {
@@ -151,7 +151,7 @@ h1 {
     display: flex;
     align-items: center;
     gap: 16px;
-    border-bottom: 1px solid #ECEDEF;
+    border-bottom: 1px solid #ecedef;
     padding: 8px 0;
     font-family: "Cerebri Sans Pro", Arial, sans-serif;
     font-size: 1.4rem;
