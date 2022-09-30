@@ -23,15 +23,6 @@
 }
 
 @font-face {
-    font-family: "Jeko";
-    src:    url("../fonts/Jeko/Jeko-Regular.otf") format("otf"),
-            url("../fonts/Jeko/Jeko-Regular.woff2") format("woff2"),
-            url("../fonts/Jeko/Jeko-Regular.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
     font-family: "Cerebri Sans Pro";
     src:    url("../fonts/CerebriSansPro/CerebriSansPro-Book.otf") format("otf"),
             url("../fonts/CerebriSansPro/CerebriSansPro-Book.ttf") format("ttf"),
